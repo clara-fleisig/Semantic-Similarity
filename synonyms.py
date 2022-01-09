@@ -1,8 +1,3 @@
-'''Semantic Similarity: starter code
-
-Author: Michael Guerzhoy. Last modified: Nov. 14, 2016.
-'''
-
 import math
 
 
@@ -158,13 +153,5 @@ def run_similarity_test(filename, semantic_descriptors, similarity_fn):
     return score/len(text) * 100
 
 if __name__ == "__main__":
-    f1 = open("text1.txt", "w")
-    f2 = open("text2.txt", "w")
-    f1.write("I am a sick man. I am a spiteful man. I am an unattractive man. I believe my liver is diseased.\n")
-    f2.write("However, I know nothing at all about my disease, and do not know for certain what ails me.")
-    f1.close()
-    f2.close()
-    sem_desc = build_semantic_descriptors_from_files(["text1.txt", "text2.txt"])
-
-#sem = build_semantic_descriptors_from_files(["pride_and_prejudice.txt", "data2.txt", "text1.txt", "text2.txt", "war_and_peace.txt", "swann's_way.txt", "text_readability.txt"])
-#run_similarity_test("testing.txt", sem, cosine_similarity)
+    sem = build_semantic_descriptors_from_files(["war_and_peace.txt", "swann's_way.txt"])
+    run_similarity_test("testing.txt", sem, cosine_similarity)
