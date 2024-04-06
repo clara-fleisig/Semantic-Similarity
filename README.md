@@ -1,5 +1,5 @@
 # Semantic-Similarity
-This project is an intelligent system that can learn to answer Test of English as a Foreign Language (TOEFL). The system approximates the semantic similarly (closeness of meaning) of words using data from english texts. 
+This project is an intelligent system that can learn to answer Test of English as a Foreign Language (TOEFL). The system approximates the semantic similarity (closeness of meaning) of words using data from english texts. 
 
 ## Describing the Problem
 The program answers multiple choice questions of the form: given a word, _w_, find which word _s1, s2, s3, s4_ is a synonym of _w_.
